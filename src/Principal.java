@@ -12,12 +12,12 @@ public class Principal {
 		boolean continua = true;
 		do {
 			try {
-				System.out.println("Digite um número um número maior que 0: ");
+				System.out.println("Digite um número um número maior que 5: ");
 				x = sc.nextInt();
 				continua = false;
 				
-				if(x < 0) {
-					throw new NumeroMenorQueOPermitidoException("Número menor ou igual a 0...");
+				if(x < 5) {
+					throw new NumeroMenorQueOPermitidoException("Número menor ou igual a 5...");
 				}
 			} catch (InputMismatchException erro) {
 				System.out.println("Opss, tipo não permitido");
