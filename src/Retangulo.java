@@ -10,7 +10,7 @@ public class Retangulo implements Forma{
 	}
 	
 	public double area() {
-		return altura * largura + 2;
+		return altura * largura;
 	}
 
 }
